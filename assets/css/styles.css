@@ -4,7 +4,7 @@
 :root, :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
 
-  --primary-bg-color: #111217;
+  --primary-bg-color: #0B0B0F;
   --secondary-bg-color: #8F3A1A;
   --primary-border-color: #28292E;
 	--secondary-border-color: #8F3A1A;
@@ -29,7 +29,7 @@
 	--icon-color: #BD4B21;
 }
 
-html[data-theme='light'] .brand__logo {
+html[data-theme='dark'] .brand__logo {
   filter: invert(1);
 }
 
