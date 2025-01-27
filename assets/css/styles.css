@@ -191,7 +191,7 @@ p {
 .menu__link.active .menu__text,
 .menu__link:hover .menu__icon, 
 .menu__link:hover .menu__text {
-  color: var(--primary-color);
+  color: var(--secondary-bg-color);
 }
 
 .menu__icon, .menu__text {
@@ -203,7 +203,7 @@ p {
 }
 
 .menu__text {
-  font-size: .75rem;
+  font-size: .85rem;
   text-transform: uppercase;
 }
 
