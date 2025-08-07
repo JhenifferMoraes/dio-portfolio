@@ -655,7 +655,7 @@ footer p {
   .technologies {
     flex-direction: row;
     justify-content: space-between;
-    padding: 10rem 6rem 4rem;
+    padding: 6rem 6rem 2rem;
   }
 
   .technologies h2 {
