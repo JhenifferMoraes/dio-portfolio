@@ -105,6 +105,7 @@ h4 {
   font-weight: 400;
   font-size: 1.15rem;
   text-align: left;
+  margin-top: 5px;
 }
 
 h1, h2, h3 {
@@ -272,7 +273,8 @@ main {
   gap: 1.5rem;
 }
 
-.main__content2 iframe {
+
+.main__content3 video {
   width: 100%;
   aspect-ratio: 16/9;
 }

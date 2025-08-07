@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Jheniffer Moraes</title>
   <meta name="description" content="Portfólio da desenvolvedora front-end Jheniffer Moraes para compartilhar projetos e habilidades desenvolvidas.">
+  <meta property="og:title" content="Jheniffer Moraes - Portfólio" />
+  <meta property="og:description" content="Portfólio da desenvolvedora front-end Jheniffer Moraes." />
+  <meta property="og:image" content="URL_da_imagem_de_destaque" />
   
   <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
  
@@ -13,6 +16,8 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
+
+   <!-- Menu desktop -->
   <header class="header">
     <nav class="header__nav">
       <ul class="menu menu--principal">
@@ -43,10 +48,14 @@
         <img class="brand__logo" src="assets/images/logoo.png" alt="Logo EA">
       </a>
     </div>
+
+      <!-- Botão de alternância de tema -->
     <div class="header__toggle">
-      <i id="toggleTheme" class="bi bi-sun"></i>
+      <i id="toggleTheme" class="bi bi-sun" aria-label="alterar tema"></i>
     </div>
   </header>
+
+    <!-- Menu mobile -->
   <nav class="nav--mobile">
     <ul class="menu menu--mobile">
       <li class="menu__item">
@@ -76,6 +85,7 @@
     </ul>
   </nav>
 
+    <!-- Topo -->
   <main id="home">
     <div class="main__content1">
       <h1><b>Soluções Inovadoras &</b> Desenvolvimento Front-end</h1>
@@ -99,12 +109,19 @@
         </button>  
       </a>
     </div>
-    <div class="main__content2">
-  
-      <iframe src="./assets/video/sitespider.mp4" title="Site SpiderMan video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+   <!-- Video Do Projeto -->
+
+    <div class="main__content3">
+      <video src="./assets/video/sitespider.mp4" controls autoplay muted title="Site SpiderMan video player" poster="assets/images/projects/spiderman-poster.png">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
     </div>
+
   </main>
 
+
+  <!-- Caixa com tecnologias -->
   <section class="technologies">
     <h2 class="titulo-light-orange">Conhecimento nas principais tecnologias do mercado</h2>
     <ul class="technologies__list">
@@ -123,10 +140,13 @@
     </ul>
   </section>
 
+  <!-- Projetos -->
+
+  <!-- Projeto 1 -->
   <section id="projetos" class="projects">
     <h2>Projetos</h2>
     <div class="projects__container">
-      <div class="projects__card">
+      <article class="projects__card">
         <img class="card__cover" src="assets/images/projects/mundoinvertido.png" alt="Capa Mundo Invertido Stranger Things">
         <div class="card__body">
           <h3 class="card__title">Mundo Invertido Stranger Things</h3>
@@ -159,8 +179,11 @@
             </button>  
           </div>
         </div>
-      </div>
-      <div class="projects__card card--reverse">
+      </article>
+
+
+      <!-- Projeto 2 -->
+      <article class="projects__card card--reverse">
         <img class="card__cover" src="assets/images/projects/memoria.png" alt="Capa Archstil">
         <div class="card__body">
           <h3 class="card__title"> Jogo da Memória com Emojis</h3>
@@ -194,8 +217,10 @@
             </button>  
           </div>
         </div>
-      </div>
-      <div class="projects__card">
+      </article>
+
+      <!-- Projeto 3 -->
+      <article class="projects__card">
         <img class="card__cover" src="assets/images/projects/detonaralph.png" alt="Capa Games Store">
         <div class="card__body">
           <h3 class="card__title">Detona Ralph</h3>
@@ -228,7 +253,9 @@
             </button>  
           </div>
         </div>
-      </div>
+      </article>
+
+      <!-- Botão para projetos -->
       <a href="https://github.com/JhenifferMoraes">
         <button class="btn btn--primary">
           <span>Ver Todos os Projetos</span>
@@ -238,33 +265,34 @@
     </div>
   </section>
 
+
+  <!-- Sobre mim -->
+
   <section id="sobre" class="about">
     <div class="about__content1">
       <img class="about__photo" src="assets/images/jheny.png" alt="Foto de uma mulher com cabelo castanho claro, usando blusa preta e brincos.">
       <div class="about__description">
         <h2>Sobre mim</h2>
-        <p>Olá! Meu nome é Jheniffer de Moraes, 
-          tenho 24 anos e sou apaixonada por tecnologia! 
-          Com foco em constante desenvolvimento 
-          na área de TI, busco aplicar e expandir meus conhecimentos
-           em diferentes frentes da tecnologia como Linux, Git, programação lógica, HTML5, CSS3, JavaScript e UX/UI.
-          <br>
-          <br>
-          Minha formação técnica foi concluída na ETEC - Escola Técnica Estadual de São Paulo, uma das maiores e mais 
-          renomadas instituições de ensino federal do estado. Durante o curso, aprofundei meus 
-          conhecimentos em desenvolvimento de páginas web, habilidades que 
-          continuam a ser um diferencial na minha carreira.
-          <br>
-          <br>
-          Atualmente, estou realizando minha faculdade de engenharia de software na Uninter,
-          onde estou aprimorando minhas habilidades técnicas e expandindo meu conhecimento em desenvolvimento de software.
-          <br>
-        </p>  
+          <p>
+          Olá! Sou Jheniffer de Moraes, tenho 24 anos e sou desenvolvedora front-end em transição de carreira
+          com formação técnica em Informática para Internet (ETEC) e atualmente estou cursando bacharelado em 
+          Engenharia de Software (UNINTER). Participei de bootcamps voltados ao uso de Linux e Design Thinking entre outros que
+          ampliaram minha visão de desenvolvimento como processo criativo e técnico.
+          </p>
+          
+          <p>
+           Atualmente, desenvolvo projetos práticos com HTML, CSS e JavaScript, aplicando conceitos de design 
+           responsivo, semântica e UX. Tenho um portfólio ativo hospedado no GitHub Pages e publiquei 
+           conteúdos técnicos sobre CSS e Flexbox no LinkedIn, com foco didático.
+          </p>  
 
+          <!-- Linguas -->
         <div class="about__icons">
           <i class="bi bi-translate"></i>
           <span>Inglês: Básico</span>
         </div>
+
+        <!-- Botão para Lindekin -->
         <div class="description__buttons">
           <a href="https://www.linkedin.com/in/jheniffer-moraes/" target="_blank">
             <button class="btn btn--primary">
@@ -280,9 +308,11 @@
       <div class="col1">
         <div class="row1">
 
-          
+          <!-- Formação -->
           <h3>Formação</h3>
-           <h4>Informatica para desenvolvimento Web</h4>
+
+          <!-- Formação 1 -->
+           <h4>Informática para desenvolvimento Web</h4>
           <span>Jun 2018, Dez 2019 - Finalizado</span>
           <div class="about__icons">
             <i class="bi bi-bank"></i>
@@ -290,9 +320,10 @@
           </div>
           <div class="about__icons">
             <i class="bi bi-mortarboard"></i>
-            <span>Curso Tecnico</span>
+            <span>Curso Técnico</span>
           </div>
 
+            <!-- Formação 2 -->
            <h4>Engenharia de Software</h4>
           <span>Maio 2025, Agos 2029 - Em andamento</span>
           <div class="about__icons">
@@ -304,8 +335,12 @@
             <span>Bacharelado</span>
           </div>
         </div>
-        
       </div>
+
+
+      <!-- Certificações -->
+
+      <!-- Linux -->
       <div class="col2">
         <h3>Cursos</h3>
         <div id="accordion">
@@ -332,6 +367,9 @@
               </p>
             </div>
           </div>
+
+
+           <!-- Front end -->
           <div class="accordion__item">
             <button class="accordion__header">
               <span>Bootcamp Dio Ri Happy - Front-end do Zero</span>
@@ -346,6 +384,43 @@
               </p>
             </div>
           </div>
+
+           <!-- Github -->
+
+           <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Bootcamp Dio Ri Happy - Front-end do Zero</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Jan 2025. 75h.
+              </p>
+              <p>
+                Bootcamp 100% focado em Front-End com HTML, CSS e JAVASCRIPT, com uma base estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas com temática do Stranger Things, Spider Man, Yu-Gi-Oh entre otros.
+              </p>
+            </div>
+          </div>
+
+
+           <!-- Design Thinking -->
+
+           <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Bootcamp Dio Ri Happy - Front-end do Zero</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One. Jan 2025. 75h.
+              </p>
+              <p>
+                Bootcamp 100% focado em Front-End com HTML, CSS e JAVASCRIPT, com uma base estruturada de conteúdos e 10 projetos práticos, incluindo páginas web responsivas e dinâmicas com temática do Stranger Things, Spider Man, Yu-Gi-Oh entre otros.
+              </p>
+            </div>
+          </div>
+          
+            <!-- User Exeperience -->
 
           <div class="accordion__item">
             <button class="accordion__header">
@@ -366,6 +441,7 @@
         
   </section>
   
+    <!-- Rodapé -->
   <section id="contato" class="contact">
     <h2>Contate-me</h2>
     <p>Estou disponível para serviços e novas conexões. Contate-me via 
