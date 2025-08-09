@@ -3,39 +3,43 @@
 
 :root, :root[data-theme='dark'] {
   --primary-color: #F0F0F0;
-
-  --primary-bg-color: #0B0B0F;
-  --secondary-bg-color: #8F3A1A;
+  --primary-bg-color: #1e1e1e;
+  --secondary-bg-color: #743d1e;
   --primary-border-color: #28292E;
-	--secondary-border-color: #8F3A1A;
+	--secondary-border-color: #F0F0F0;
 
   --title-color: #F0F0F0;
   --text-color: #9A9A9C;
   --link-color: #ffffff;
-  --icon-color: #8F3A1A;
+  --icon-color: #743d1e;
 }
 
 :root[data-theme='light'] {
   --primary-color: #0B0B0F;
-
-	--primary-bg-color: #E9E9E9;
-	--secondary-bg-color: #BD4B21;
-	--primary-border-color: #C7C8C9;
-	--secondary-border-color: #BD4B21;
+	--primary-bg-color: #e6d6cb;
+	--secondary-bg-color: #743d1e;
+	--primary-border-color: #cab9ad;
+	--secondary-border-color: #e6d6cb;
 
 	--title-color: #0B0B0F;
 	--text-color: #28292E;
 	--link-color: #28292E;
-	--icon-color: #BD4B21;
+	--icon-color: #aa6035;
 }
 
 html[data-theme='dark'] .brand__logo {
   filter: invert(1);
 }
 
+
 html[data-theme='dark'] .technologies__logo {
   filter: invert(1);
 }
+
+html[data-theme='light'] .technologies__logo {
+  filter: invert(1);
+}
+
 
 
 * {
@@ -314,7 +318,13 @@ main {
   aspect-ratio: 1/1;
   border: 1px solid var(--secondary-border-color);
   border-radius: 50rem;
+
 }
+
+html[data-theme='light'] #projeto__item{
+  background-color: var(--secondary-bg-color);
+}
+
 
 .technologies__logo {
   height: 2.4rem;
@@ -375,6 +385,7 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .card__buttons .btn {
@@ -407,7 +418,8 @@ main {
 .about {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem
+  gap: 1.5rem;
+   border-top: 1px solid var(--primary-border-color);
 }
 
 .about__content1, .about__content2 {
@@ -515,6 +527,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: rem;
   gap: 1.5rem;
   border-top: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
@@ -619,6 +632,7 @@ footer p {
 
   .about {
     gap: 5rem;
+     border-top: 1px solid var(--primary-border-color);
   }
 
   .about__content1, .about__content2 {
@@ -627,6 +641,7 @@ footer p {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 4rem;
+    
   }
 
   .about__description h2 {
